@@ -1,6 +1,11 @@
+// src/index.js
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
-import "./index.css";
+import App from "./App";  // Correct import to App.js in src
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
